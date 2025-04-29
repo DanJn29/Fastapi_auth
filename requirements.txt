@@ -1,0 +1,5 @@
+fastapi
+authx
+pydantic
+PyJWT
+uvicorn
