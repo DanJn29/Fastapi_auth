@@ -1,0 +1,12 @@
+# Ignore all files by default
+*
+
+# Allow .gitignore to be tracked
+!.gitignore
+
+# Ignore .env file
+.env
+
+# Allow other necessary files and directories
+!.venv/
+!.venv/**
