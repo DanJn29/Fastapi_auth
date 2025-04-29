@@ -3,3 +3,4 @@ authx
 pydantic
 PyJWT
 uvicorn
+python-dotenv
