@@ -1,0 +1,12 @@
+# Ignore all files by default
+.venv/bin
+
+# Allow .gitignore to be tracked
+!.gitignore
+
+# Ignore .env file
+.env
+
+# ignore other necessary files and directories
+.venv/
+.venv/**
