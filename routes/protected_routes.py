@@ -9,6 +9,6 @@ def protected(token: str = Depends(security.access_token_required)):
 
 @router.get("/admin")
 def super_protected(token: str = Depends(security.access_token_required)):
-    if token.role != "user":
-        return {"data": "SUPER PROTECTED INFO"}
-    raise HTTPException(status_code=401, detail="YOU ARE NOT ADMIN")
+    if token.role != "admin":
+        raise HTTPException(status_code=401, detail="YOU ARE NOT ADMIN")
+    return {"data": "SUPER PROTECTED INFO"}
